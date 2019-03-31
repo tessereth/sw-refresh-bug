@@ -34,6 +34,7 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
+          <strong>You are running version <code>{process.env.GATSBY_VERSION || 'unknown'}</code></strong>
           <main>{children}</main>
           <footer>
             © {new Date().getFullYear()}, Built with
