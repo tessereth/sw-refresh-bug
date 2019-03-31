@@ -4,4 +4,9 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+// Trigger a service worker update on route change
+exports.onRouteUpdate = () => {
+  navigator.serviceWorker.register('/sw.js').then(reg => {
+    reg.update()
+  })
+}
