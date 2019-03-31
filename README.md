@@ -1,4 +1,4 @@
-Reproduction for bug in gatsby-plugin-offline.
+Reproduction for https://github.com/gatsbyjs/gatsby/issues/12964.
 
 To test:
 
